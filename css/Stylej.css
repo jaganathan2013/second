@@ -1,0 +1,358 @@
+
+/* .hero{
+    height: 90vh;                 important-------------
+} */
+
+@import url('../css/fonts.css');
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Livvic', cursive ;
+    /* * not work */
+}
+a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+@media (max-width: 960px) {
+    a{
+        font-size: 0.9rem !important;
+    }
+    .navbar a, .socia {
+        padding: 0 0.6rem !important;
+    }
+    .socia ,.menu{
+        gap: 0 !important;
+    }
+  
+}
+i{
+    font-size: 1.2rem;
+}
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    border-radius: 0.7rem;
+}
+.container{
+    max-width: 1700px;
+    margin: auto;
+}
+.hero ,.blog_card,.content_box_all{
+    padding: 3rem 0; 
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.33em;
+}
+/* all text */
+.hero_text{
+    color: aliceblue;
+}
+/* all btn */
+button {
+    border: none;
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 0.8rem 3rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 1.8rem;
+    width: 11rem;
+    background: rgb(248, 229, 181);
+    color: rgb(0, 0, 0);
+}
+button:hover{
+       background:rgb(255, 119, 0);
+       color: rgb(255, 255, 255);
+}
+/* all a link */
+
+a:hover,i:hover{
+color: rgb(255, 119, 0);
+}
+/* nav bar */
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 22;
+    background: rgba(239, 231, 210, 0.959);
+}
+.navbar ,.socia ,.menu{
+    display: flex;
+    align-items: center;  
+}
+.navbar {
+    height: 3rem;
+ 
+    justify-content: space-between;
+}
+.navbar a , .socia{
+    padding: 0 1rem;
+}
+.socia ,.menu{
+    gap: 0.7rem;
+}
+/* hero */
+.hero{
+      height: 90vh;  
+}
+.spacer{
+    height: 8rem;
+}
+.hero_text{
+height: 100%;
+    background: url('../assets/Background-image.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;  
+     text-align: center;
+}
+/* blog_card */
+.blog_card{
+    background: url('../assets/Abract01.png');
+    background-repeat: no-repeat;
+    background-position:right;
+    /* background-size: cover; */
+    height: 80vh;
+    margin-top: 2rem;
+}
+.blog_box{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1.6rem;
+    border-radius: 1rem;
+    background: rgba(178, 159, 114, 0.097);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.blog_box button{
+    margin-top: -0.2rem;
+}
+.blog_box span{
+    margin-top: -0.5rem;
+    margin-bottom:1rem;
+}
+/* Content_box */
+.content_box {
+    display: flex;
+    gap: 1.5rem;
+}
+.left_content{
+    width: 70%;
+}
+.left_content .img_box .img{
+    height:50%;
+}
+.right_content{
+    width: 30%;
+}
+/* -------------- */
+.Content_data{
+    position: relative;
+}
+.img_box .Content_data2{
+    position: absolute;
+padding: 1rem;
+top: -2rem;
+left: 30%;
+background: rgb(248, 229, 181);
+border-radius: 5rem;
+}
+@media (max-width: 1100px) {
+    .Content_data{
+        position: static;
+    }
+    .img_box .Content_data2{
+        position:static;
+    padding: 1rem;
+    background: rgb(248, 229, 181);
+    border-radius: 0;
+    margin-top: 6px;
+    }
+}
+.img_box h3{
+    margin-top: 2rem;
+}
+/* right */
+.category{
+    background: rgba(239, 231, 210, 0.245);
+}
+.category ul{
+    padding: 1rem;
+}
+.category ul li{
+    display: flex;
+    justify-content: space-between;
+    padding:0.7rem  1rem;
+    margin-bottom: 1rem;
+    background:rgb(248, 229, 181);
+    border-radius: 5rem;
+}
+/* ----------- */
+.post-in{
+    position: relative;
+}
+.post-image .post-in .post-info{
+ position: absolute;   
+ top: -2.3rem;
+ background:rgb(248, 229, 181);
+ padding:0.5rem 1rem;
+}
+@media (max-width: 1100px) {
+    .post-in{
+       position: static;
+    }
+    .post-image .post-in .post-info{
+        margin-top: 5px;
+    position: static;
+    }
+}
+@media (max-width: 600px) {
+    .left_content{
+        width: 100%;
+    }
+    .right_content{
+        display: none;
+    }
+}
+
+.newsletter .nuse_box input{
+  width: 21rem;
+    height: 1.9rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+}
+.tags .tagss{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags .tagss span{
+    background:rgb(248, 229, 181);
+    padding: 0.4rem 1rem;
+    border-radius: 3rem;
+    margin: 0.4rem 0.6rem;
+}
+/* footer */
+
+
+.instagram .flex-row{
+display: flex;
+width: 5rem;
+}
+.fotter_box{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.fotter_box .about-us{
+    width:35%;
+}
+.fotter_box .instagram{
+    width:15rem;
+}
+
+.copyright{
+    text-align: center;
+}
+/* move-up */
+.move-up{
+    float: right;
+    margin-top: -5rem;
+    margin-right: 3rem;
+}
+
+
+
+
+
+@media (max-width: 1450px) {
+    .container{
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+@media (max-width: 1250px) {
+    .container{
+        max-width: 1100px;
+    }
+}
+@media (max-width: 1150px) {
+    .container{
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1050px) {
+    .container{
+        max-width: 900px;
+    }
+}
+@media (max-width: 950px) {
+    .container{
+        max-width: 840px;
+    }
+}
+@media (max-width: 850px) {
+    .container{
+        max-width: 740px;
+    }
+}
+@media (max-width: 750px) {
+    .container{
+        max-width: 640px;
+    }
+}
+@media (max-width: 650px) {
+    .container{
+        max-width: 580px;
+    }
+}
+@media (max-width: 600px) {
+    .container{
+        max-width: 530px;
+    }
+}
+@media (max-width: 550px) {
+    .container{
+        max-width: 470px;
+    }
+}
+@media (max-width: 500px) {
+    .container{
+        max-width: 430px;
+    }
+}
+@media (max-width: 450px) {
+    .container{
+        max-width: 370px;
+    }
+}
+@media (max-width: 400px) {
+    .container{
+        max-width: 320px;
+    }
+}
+@media (max-width: 350px) {
+    .container{
+        max-width: 270px;
+    }
+}
